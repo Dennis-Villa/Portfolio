@@ -1,0 +1,93 @@
+
+.home-section {
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    margin-bottom: -50px;
+}
+
+.home-header {
+    padding-top: 6rem;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.salute {
+    font-size: 2.4em;
+    padding-bottom: 15px; 
+}
+
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+.heading-name {
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+}
+
+.main-info {
+    padding-top: 10px; 
+    font-size: var(--secondary-font-size);
+    font-weight: var(--secondary-font-weight);
+    text-align: "left";
+}
+
+.home-about-social {
+    text-align: left;
+    padding: 2px;
+}
+  
+.home-about-social-links {
+    justify-content: center;
+    padding-top: 15px;
+    display: inline-block;
+    position: relative;
+    padding-inline-start: 0;
+}
+
+.icon-colour {
+    color: #700c86;
+}
+  
+.home-social-icons {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2em;
+    background: var(--text-color);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+  
+.home-social-icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #68187a;
+    transition: 0.2s;
+    transform: scale(0.9);
+    z-index: -1;
+}
+  
+.home-social-icons:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #801f95;
+}
+  
+.home-social-icons:hover {
+    color: #87209e;
+    box-shadow: 0 0 5px #87209e;
+    text-shadow: 0 0 2px #87209e;
+}

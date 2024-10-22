@@ -1,97 +1,95 @@
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiOutlineDownload,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
+import "./Home.css";
 import homeLogo from "../../Assets/home-main.svg";
+import pdf from "../../Assets/../Assets/Curriculum_Web_English.pdf";
 
 // import Type from "./Type";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Container className="home-content">
-          <Row className="home-header">
-            <Col md={7} >
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
+    <Container className="home-section" id="home">
+      <Row className="home-header">
+        <Col md={7} >
+          <h1 className="salute">
+            Hi There!{" "}
+            <span className="wave" role="img" aria-labelledby="wave">
+              👋🏻
+            </span>
+          </h1>
 
-              <h1 className="heading-name">
-                I&apos;M
-                <strong className="main-name"> DENNIS VILLAVICENCIO</strong>
-              </h1>
+          <h1 className="heading-name">
+            I&apos;M
+            <strong className="main-name"> DENNIS VILLAVICENCIO</strong>
+          </h1>
 
-              <div className="main-info">
-                <p>Full Stack Developer and Big Data Specialist. I build solutions with a strong focus on software security. </p>
-                {/* <Type /> */}
-              </div>
+          <div className="main-info">
+            <p>Full Stack Developer and Big Data Specialist. I build solutions with a strong focus on software security. </p>
+            {/* <Type /> */}
+          </div>
 
-                <Col md={12} className="home-about-social">
-                  <ul className="home-about-social-links">
-                    <li className="social-icons">
-                      <a
-                        href="https://github.com/soumyajit4419"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-colour  home-social-icons"
-                      >
-                        <AiFillGithub />
-                      </a>
-                    </li>
-                    <li className="social-icons">
-                      <a
-                        href="https://twitter.com/Soumyajit4419"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-colour  home-social-icons"
-                      >
-                        <AiOutlineTwitter />
-                      </a>
-                    </li>
-                    <li className="social-icons">
-                      <a
-                        href="https://www.linkedin.com/in/soumyajit4419/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-colour  home-social-icons"
-                      >
-                        <FaLinkedinIn />
-                      </a>
-                    </li>
-                    <li className="social-icons">
-                      <a
-                        href="https://www.instagram.com/soumyajit4419"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-colour home-social-icons"
-                      >
-                        <AiFillInstagram />
-                      </a>
-                    </li>
-                  </ul>
-                </Col>
-            </Col>
+          <Col md={12} className="home-about-social">
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/Dennis-Villa"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/dennis-villavicencio-quintero-990180298/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:dennisvillavicencioq@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <MdOutlineEmail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <Button
+                  variant="primary"
+                  href={pdf}
+                  target="_blank"
+                >
+                  <AiOutlineDownload />
+                  &nbsp;Download CV
+                </Button>
+              </li>
+            </ul>
+          </Col>
+        </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-    </section>
+        <Col md={5} style={{ paddingBottom: 20 }}>
+          <img
+            src={homeLogo}
+            alt="home pic"
+            className="img-fluid"
+          />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
