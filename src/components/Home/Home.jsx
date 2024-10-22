@@ -67,11 +67,12 @@ function Home() {
                   <MdOutlineEmail />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className="social-icons" >
                 <Button
                   variant="primary"
                   href={pdf}
                   target="_blank"
+                  className="home-curriculum-button"
                 >
                   <AiOutlineDownload />
                   &nbsp;Download CV

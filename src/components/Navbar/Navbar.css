@@ -11,21 +11,3 @@
     padding: 0.3rem 2rem;
     font-size: 1.2rem;
 }
-
-.fork-btn-inner {
-    line-height: 1.4em;
-    background-color: var(--imp-text-color);
-    padding: 0.25rem 1.1rem;
-    vertical-align: middle;
-    text-align: center;
-}
-  
-.fork-btn-inner:hover {
-    transform: translateY(-2px);
-    opacity: 1;
-    border-color: #a24dd386;
-}
-.fork-btn-inner::after {
-    display: none !important;
-}
-  

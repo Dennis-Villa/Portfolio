@@ -8,9 +8,11 @@ import {
   SiMacos,
 } from "react-icons/si";
 
+import "./Stack.css";
+
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row className="stack-row" >
       <Col xs={4} md={2} className="tech-icons">
         <SiMacos />
       </Col>

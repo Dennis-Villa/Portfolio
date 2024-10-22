@@ -1,0 +1,53 @@
+
+.project-card-view {
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+    color: var(--text-color);
+    background-color: transparent;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s;
+    height: 100%;
+
+    &:hover {
+        transform: scale(1.02);
+        overflow: hidden;
+        box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+    }
+}
+
+.project-card-title {
+    color: var(--imp-text-color);
+}
+
+.project-tecnologies {
+    text-align: center;
+    padding: 2px; 
+}
+
+.project-card-icon-list {
+    justify-content: center;
+    padding-top: 15px;
+    display: inline-block;
+    position: relative;
+    padding-inline-start: 0;
+}
+
+.project-card-icon {
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tecnology-icon {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+
+/* .card-img-top {
+    padding: 20px !important;
+    opacity: 0.8 !important;
+    border-radius: 10px !important;
+} */

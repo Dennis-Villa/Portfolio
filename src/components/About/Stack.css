@@ -1,0 +1,36 @@
+
+.stack-row {
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.tech-icons {
+    font-size: 4.5em;
+    margin: 15px;
+    padding: 10px;
+    opacity: 0.93;
+    border: 1.7px solid rgba(200, 137, 230, 0.637);
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    display: table;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+    overflow: hidden;
+    transition: all 0.2s ease 0s;
+
+    &:hover {
+        transform: scale(1.05);
+        overflow: hidden;
+        border-color: rgba(197, 115, 230, 0.883);
+    }
+}
+
+.tech-icons svg {
+    margin-bottom: 10px;
+}
+
+
+/* .tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+} */

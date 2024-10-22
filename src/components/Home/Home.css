@@ -25,6 +25,10 @@
     display: inline-block;
 }
 
+.main-name {
+    color: var(--imp-text-color);
+}
+
 .heading-name {
     font-size: var(--header-font-size);
     font-weight: var(--header-font-weight);
@@ -90,4 +94,11 @@
     color: #87209e;
     box-shadow: 0 0 5px #87209e;
     text-shadow: 0 0 2px #87209e;
+}
+
+.home-curriculum-button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
 }

@@ -1,32 +1,43 @@
 
 import { Container, Row, Col } from "react-bootstrap";
+import {
+  DiReact as React,
+  DiNodejs as NodeJs,
+  DiMongodb as Mongodb,
+} from "react-icons/di";
+
 import ProjectCard from "./ProjectCards";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import { leaf, emotion, editor, chatify, suicide, bitsOfCode } from "../../Assets/Projects";
+import "./Projects.css";
 
 function Projects() {
+
+  const proyects = [
+    {
+      imgPath: chatify,
+      isBlog: false,
+      title: "Chatify",
+      description: "Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages.",
+      ghLink: "https://github.com/soumyajit4419/Chatify",
+      demoLink: "https://chatify-49.web.app/",
+      tecnologies: [ 
+        { name: "React", icon: React, },
+        { name: "NodeJs", icon: NodeJs, },
+        { name: "Mongodb", icon: Mongodb, },
+      ],
+    },
+  ];
+
   return (
-    <Container fluid id="projects" className="project-section">
+    <Container id="projects" className="project-section">
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Projects </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I&apos;ve worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row className="project-row" >
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              {...proyects[0]}
             />
           </Col>
 
