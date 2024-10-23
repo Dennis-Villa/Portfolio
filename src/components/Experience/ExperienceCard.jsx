@@ -27,7 +27,7 @@ function ExperienceCard(props) {
             {/* </Fade> */}
 
             <div className="experience-card-stepper">
-                <div className="experience-card-stepper-circle" />
+                <div className="experience-card-stepper-circle"  style={{backgroundColor: experience.color}}/>
                 {!last_card && (
                     <div className="experience-card-stepper-line" />
                 )}

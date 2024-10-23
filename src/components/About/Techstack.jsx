@@ -1,70 +1,79 @@
 
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
+  DiHtml5,
+  DiCss3,
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
   DiPython,
-  DiGit,
-  DiJava,
+  DiSpark,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
+  SiRedux,
+  SiBootstrap,
+  SiMarkdown,
+  SiExpress,
   SiPostgresql,
+  SiSqlite,
+  SiOpenapiinitiative,
+  SiSwagger,
+  SiCplusplus,
+  SiCsharp,
+  SiQt,
+  SiPandas,
+  SiScikitlearn,
+  SiPostman,
+  SiBurpsuite,
+  SiMetasploit,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+
 import "./Stack.css";
 
 function Techstack() {
+
+  const stack = [
+    { name: "Html", icon: DiHtml5 },
+    { name: "Css", icon: DiCss3 },
+    { name: "JavaScript", icon: DiJavascript1 },
+    { name: "React", icon: DiReact },
+    { name: "Redux", icon: SiRedux },
+    { name: "Bootstrap", icon: SiBootstrap },
+    { name: "Markdown", icon: SiMarkdown },
+    { name: "NodeJs", icon: DiNodejs },
+    { name: "Express", icon: SiExpress },
+    { name: "Mongodb", icon: DiMongodb },
+    { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "SQLite", icon: SiSqlite },
+    { name: "OpenAPI", icon: SiOpenapiinitiative },
+    { name: "Swagger", icon: SiSwagger },
+    { name: "C++", icon: SiCplusplus },
+    { name: "C#", icon: SiCsharp },
+    { name: "Qt", icon: SiQt },
+    { name: "Python", icon: DiPython },
+    { name: "Spark", icon: DiSpark },
+    { name: "Pandas", icon: SiPandas },
+    { name: "Scikit-Learn", icon: SiScikitlearn },
+    { name: "Postman", icon: SiPostman },
+    { name: "BurpSuite", icon: SiBurpsuite },
+    { name: "Metasploit", icon: SiMetasploit },
+  ];
+
   return (
+
     <Row className="stack-row">
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
+      {
+        stack.map( ( tech ) => {
+          return (
+            <Col xs={4} md={2} className="tech-icon-box" key={ tech.name } >
+              <tech.icon className="tech-icon"/>
+              <p>{ tech.name }</p>
+            </Col>
+          )
+        })
+      }
+
     </Row>
   );
 }

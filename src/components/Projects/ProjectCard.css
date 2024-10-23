@@ -18,6 +18,11 @@
     color: var(--imp-text-color);
 }
 
+.project-card-image {
+    padding: 10px;
+    border-radius: 30px;
+}
+
 .project-tecnologies {
     text-align: center;
     padding: 2px; 
@@ -45,9 +50,6 @@
     text-align: center;
 }
 
-
-/* .card-img-top {
-    padding: 20px !important;
-    opacity: 0.8 !important;
-    border-radius: 10px !important;
-} */
+.project-card-button {
+    margin: 0 8px;
+}

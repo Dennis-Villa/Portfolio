@@ -1,16 +1,16 @@
 
-import bitsOfCode from './blog.png';
-import chatify from './chatify.png';
-import editor from './codeEditor.png';
-import emotion from './emotion.png';
-import leaf from './leaf.png';
-import suicide from './suicide.png';
+import hashApi from './hash-api.png';
+import cartwish from './cartwish.png';
+import calendar from './calendar.png';
+import hotel from './hotel.png';
+import attrition from './attrition.png';
+import agriculture from './agriculture.png';
 
 export {
-    bitsOfCode,
-    chatify,
-    editor,
-    emotion,
-    leaf,
-    suicide,
+    hashApi,
+    cartwish,
+    calendar,
+    hotel,
+    attrition,
+    agriculture,
 };

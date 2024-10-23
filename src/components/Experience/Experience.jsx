@@ -2,32 +2,36 @@
 import { Container } from "react-bootstrap";
 import ExperienceCard from "./ExperienceCard";
 import "./Experience.css";
-import muffitoLogo from "../../Assets/Experience/muffito_logo.png";
-import freecopyLogo from "../../Assets/Experience/freecopy_logo.png";
+import { uclvLogo, dataannotationLogo } from "../../Assets/Experience";
+
 function Experience() {
 
     const experiences = [
-        {
-            title: "Android and ML Developer",
-            company: "Muffito Incorporation",
-            company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-            logo_path: muffitoLogo,
-            duration: "May 2018 - Oct 2018",
-            location: "Pune, Maharashtra",
-            description:
-                "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
-            color: "#9b1578"
-        },
         {            
-            title: "Android Developer",
-            company: "FreeCopy Pvt. Ltd.",
-            company_url: "https://www.linkedin.com/company/freecopy/about/",
-            logo_path: freecopyLogo,
-            duration: "Nov 2017 - Dec 2017",
-            location: "Ahmedabad, Gujarat",
+            title: "AI Model Trainer",
+            company: "DataAnnotation Tech",
+            company_url: "https://www.dataannotation.tech/",
+            logo_path: dataannotationLogo,
+            duration: "Feb 2024 - May 2024",
+            location: "New York, US",
             description:
-                "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-            color: "#fc1f20"
+                "My tasks included the training of Artificial Intelligence LLM models focused on answering programming queries, as well as some general functionality models. The training was based on generating, reviewing, correcting and comparing answers to programming problems and typical development cases. Among the languages I used with the models were: JavaScript, Python and C++.",
+            color: "#f1dea1"
+        },
+        {
+            title: "University Professor",
+            company: "Universidad Central \"Marta Abreu\" de Las Villas",
+            company_url: "https://www.uclv.edu.cu/",
+            logo_path: uclvLogo,
+            duration: "Mar 2022 - Jan 2024",
+            location: "Villa Clara, Cuba",
+            description:
+                <p>Responsible for research and teaching the subject Programming in C++. I developed an Artificial Intelligence irrigation system for agriculture capable of reducing the total water consumption in protected crops. I participated in several international events and conventions such as:
+                    <a href="https://convencion.uclv.cu/es/"> UCLV 2023 Convention</a>, 
+                    <a href="https://apply.falling-walls.com/lab/"> Falling Wall Labs</a> and 
+                    <a href="https://icpc.global/"> ICPC</a>.
+                </p>,
+            color: "#80bfcc"
         },
     ];
 
