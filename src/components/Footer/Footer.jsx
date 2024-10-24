@@ -9,16 +9,21 @@ import { MdOutlineEmail } from "react-icons/md";
 import "./Footer.css";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Developed by Dennis Villavicencio</h3>
+          <h3>Based on <a 
+              href="https://github.com/soumyajit4419/Portfolio/tree/master"
+              rel="noreferrer noopener"
+              target="_blank"
+              className="credit-link"
+            >
+              Soumyajit
+            </a> project</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} DV</h3>
+          <h3>Dennis Villavicencio Quintero 2024</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">

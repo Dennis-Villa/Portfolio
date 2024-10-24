@@ -1,40 +1,22 @@
 
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import "./AboutCard.css";
 
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+          <p>
+            My name is <span className="important-text">Dennis Villavicencio Quintero</span> and I started to get into programming over 8 years ago. The language I started with was C++ and I actively used it in my training for international programming competitions like the ICPC.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I started in web programming as a hobby and it soon became my main focus and the area where I seek to focus all the tools and knowledge I have.
+            As part of my professional development I completed a training as a Cybersecurity Specialist, which in addition to improve my way of working has prompted me to develop an open source project very focused in this field.
+            <br />
+            <br />
+            I am eager to hear from you, to see how I can help you with my knowledge. So do not doubt to contact me.
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            &quot;Strive to build things that make a difference!&quot;{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>

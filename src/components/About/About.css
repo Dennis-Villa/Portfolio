@@ -1,0 +1,19 @@
+
+.about-section {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.about-header {
+    color: var(--text-color);
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .about-img {
+      padding-top: 0;
+    }
+}

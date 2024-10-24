@@ -62,11 +62,11 @@ function Techstack() {
 
   return (
 
-    <Row className="stack-row">
+    <Row className="stack-row"> 
       {
         stack.map( ( tech ) => {
           return (
-            <Col xs={4} md={2} className="tech-icon-box" key={ tech.name } >
+            <Col xs={4} md={1} className="tech-icon-box" key={ tech.name } >
               <tech.icon className="tech-icon"/>
               <p>{ tech.name }</p>
             </Col>

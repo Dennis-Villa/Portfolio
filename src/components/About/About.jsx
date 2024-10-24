@@ -5,39 +5,30 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 
+import "./About.css"
+
 function About() {
   return (
-    <Container fluid id="about" className="about-section">
+    <Container id="about" className="about-section">
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I&apos;M</strong>
-            </h1>
+        <h1 className="main-header">
+          About <strong className="important-text">Me</strong>
+        </h1>
+        <Row className="align-items-center">
+          <Col md={7} >
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+          <Col md={5}>
+            <img src={laptopImg} alt="about" className="img-fluid about-img" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+        <h1 className="main-header">
+          Professional <strong className="important-text">Skillset </strong>
         </h1>
 
         <Techstack />
 
-        <Github />
+        {/* <Github /> */}
       </Container>
     </Container>
   );

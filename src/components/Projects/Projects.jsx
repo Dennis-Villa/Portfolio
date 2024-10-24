@@ -16,9 +16,8 @@ function Projects() {
   const proyects = [
     {
       imgPath: hashApi,
-      isBlog: false,
       title: "Hash Encryption API ",
-      description: "Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages.",
+      description: "My current open source project following the OpenAPI standard. Its goal is to centralize in a single API the most common queries related to hashes and encryption that I have come across, such as: detect, encrypt, decrypt and give information about encryption algorithms and other utilities.",
       ghLink: "https://github.com/Dennis-Villa/Hash_Encryption_API",
       demoLink: "https://hash-encryption-api.onrender.com/",
       tecnologies: [ 
@@ -29,9 +28,8 @@ function Projects() {
     },
     {
       imgPath: cartwish,
-      isBlog: false,
       title: "CartWish E-Commerce",
-      description: "My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown.",
+      description: "This project showcases a functional e-commerce page featuring a shopping cart system, user authentication, and login capabilities. It includes search filters that allow users to browse products by category, price, and rating. The project is designed to be scalable and serves as a solid base for future development.",
       ghLink: "https://github.com/Dennis-Villa/cartwish-backend",
       demoLink: "https://cartwish9908.netlify.app/",
       tecnologies: [ 
@@ -42,9 +40,8 @@ function Projects() {
     },
     {
       imgPath: calendar,
-      isBlog: false,
       title: "Collaborative Calendar",
-      description: "Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage",
+      description: "This project is a shared calendar platform that allows users to jointly manage and view events. It includes user login and authentication to ensure secure access, with permissions that prevent users from editing events they did not create. The platform facilitates smooth collaboration between users.",
       ghLink: "https://github.com/Dennis-Villa/calendar-app-backend",
       demoLink: "https://calendar-app-rob6.onrender.com/",
       tecnologies: [ 
@@ -55,9 +52,8 @@ function Projects() {
     },
     {
       imgPath: hotel,
-      isBlog: false,
       title: "Light Hotel Manager",
-      description: "Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model.",
+      description: "A lightweight application for managing reservations, rooms, and customer data in hotels. It is optimized to run on devices with low processing power and includes features such as local storage, tracking reservations by date and daily reports for expected check-ins and check-outs. Ideal for small-scale hotel operations.",
       ghLink: "https://github.com/Dennis-Villa/Gestor_Hotelero",
       tecnologies: [ 
         { name: "Cplusplus", icon: SiCplusplus, },
@@ -66,22 +62,9 @@ function Projects() {
       ],
     },
     {
-      imgPath: attrition,
-      isBlog: false,
-      title: "Attrition Prediction Model",
-      description: "Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention.",
-      ghLink: "https://github.com/Dennis-Villa/Attrition_Prediction",
-      tecnologies: [ 
-        { name: "Python", icon: SiPython, },
-        { name: "Pandas", icon: SiPandas, },
-        { name: "Scikitlearn ", icon: SiScikitlearn , },
-      ],
-    },
-    {
       imgPath: agriculture,
-      isBlog: false,
       title: "Smart Irrigation System",
-      description: "Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention.",
+      description: "This project uses a Machine Learning-based AI model to optimize water consumption in protected crop houses. Although it is a private project, the research findings have been published. Its objective is to improve water efficiency in irrigation through intelligent predictions of agricultural variables.",
       articleLink: "https://dialnet.unirioja.es/servlet/articulo?codigo=9513939",
       tecnologies: [ 
         { name: "Python", icon: SiPython, },
@@ -89,13 +72,24 @@ function Projects() {
         { name: "Spark ", icon: DiSpark , },
       ],
     },
+    {
+      imgPath: attrition,
+      title: "Attrition Prediction Model",
+      description: "This project is a Machine Learning-based model designed to predict personnel attrition. It generates detailed reports on the influence of each variable in the model and identifies the most likely reasons for employee departures based on the data. Ideal for understanding and addressing workforce turnover.",
+      ghLink: "https://github.com/Dennis-Villa/Attrition_Prediction",
+      tecnologies: [ 
+        { name: "Python", icon: SiPython, },
+        { name: "Pandas", icon: SiPandas, },
+        { name: "Scikitlearn ", icon: SiScikitlearn , },
+      ],
+    },
   ];
 
   return (
     <Container id="projects" className="project-section">
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Projects </strong>
+        <h1 className="main-header">
+          My Recent <strong className="important-text">Projects </strong>
         </h1>
         <Row className="project-row" >
           

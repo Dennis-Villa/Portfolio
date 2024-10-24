@@ -8,7 +8,6 @@ import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
-import Home2 from "./components/Home/Home2";
 import "./style.css";
 import "./App.css";
 
@@ -32,7 +31,6 @@ function App() {
         <Home />
         <Experience />
         <Projects />
-        <Home2 />
         <About />
 
         <Footer />

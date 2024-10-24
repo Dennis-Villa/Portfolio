@@ -29,7 +29,7 @@
     color: var(--imp-text-color);
 }
 
-.heading-name {
+.name-header {
     font-size: var(--header-font-size);
     font-weight: var(--header-font-weight);
 }
@@ -68,7 +68,7 @@
     line-height: 2em;
     background: var(--text-color);
     border-radius: 50%;
-    transition: 0.5s;
+    transition: 0.2s;
 }
   
 .home-social-icons::before {

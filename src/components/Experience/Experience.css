@@ -3,10 +3,6 @@
   padding-top: 100px;
 }
 
-.experience-heading {
-  color: var(--text-color);
-  font-size: var(--header-font-size);
-  font-weight: var(--header-font-weight);
+.experience-header {
   padding-bottom: 40px;
-  text-align: left;
 }

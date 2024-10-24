@@ -1,0 +1,10 @@
+
+.quote-card-view {
+    border: none ;
+    background-color: transparent;
+    color: var(--text-color);
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: left;
+}

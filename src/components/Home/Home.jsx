@@ -25,7 +25,7 @@ function Home() {
             </span>
           </h1>
 
-          <h1 className="heading-name">
+          <h1 className="name-header">
             I&apos;M
             <strong className="main-name"> DENNIS VILLAVICENCIO</strong>
           </h1>

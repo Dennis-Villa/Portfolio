@@ -30,11 +30,11 @@ function ProjectCards(props) {
         {props.ghLink && (
           <Button variant="primary" href={props.ghLink} target="_blank" className="project-card-button">
             <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
+              GitHub
           </Button>
         )}
 
-        {!props.isBlog && props.demoLink && (
+        {props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
@@ -66,7 +66,6 @@ ProjectCards.propTypes = {
   imgPath: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  isBlog: PropTypes.bool.isRequired,
   ghLink: PropTypes.string,
   demoLink: PropTypes.string,
   articleLink: PropTypes.string,
