@@ -25,4 +25,8 @@
     .about-img {
       padding-top: 0;
     }
+
+    .col-about-image {
+        display: none;
+    }
 }
