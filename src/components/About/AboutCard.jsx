@@ -8,14 +8,11 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p>
-            My name is <span className="important-text">Dennis Villavicencio Quintero</span> and I started to get into programming over 8 years ago. The language I started with was C++ and I actively used it in my training for international programming competitions like the ICPC.
+            I’m Dennis Villavicencio Quintero, and I’ve been programming for over 8 years. I began with C++, using it in international competitions like the ICPC, which built my foundation in problem-solving. Later, I moved into web development, which became my main focus.
             <br />
             <br />
-            I started in web programming as a hobby and it soon became my main focus and the area where I seek to focus all the tools and knowledge I have.
-            As part of my professional development I completed a training as a Cybersecurity Specialist, which in addition to improve my way of working has prompted me to develop an open source project very focused in this field.
-            <br />
-            <br />
-            I am eager to hear from you, to see how I can help you with my knowledge. So do not doubt to contact me.
+            Alongside my web development work, I completed a certification as a Cybersecurity Specialist. This training has not only improved my approach to secure coding but also inspired me to develop an open-source project in cybersecurity. I’m always excited to explore how I can apply my knowledge to new projects, so feel free to reach out. I’d love to connect and discuss how I can help.
+            {/* I also completed training as a Cybersecurity Specialist, which enhanced my approach to secure coding and inspired me to create an open-source project in this area. I’m eager to connect and see how I can support new projects, so feel free to reach out! */}
           </p>
         </blockquote>
       </Card.Body>

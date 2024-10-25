@@ -7,9 +7,9 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
-import "./Home.css";
-import homeLogo from "../../Assets/home-main.svg";
+import { homeImg } from "../../Assets";
 import pdf from "../../Assets/../Assets/Curriculum_Web_English.pdf";
+import "./Home.css";
 
 // import Type from "./Type";
 
@@ -74,7 +74,7 @@ function Home() {
                   target="_blank"
                   className="home-curriculum-button"
                 >
-                  <AiOutlineDownload />
+                  <AiOutlineDownload className="download-logo"/>
                   &nbsp;Download CV
                 </Button>
               </li>
@@ -82,11 +82,11 @@ function Home() {
           </Col>
         </Col>
 
-        <Col md={5} style={{ paddingBottom: 20 }}>
+        <Col md={5} className="col-home-picture" >
           <img
-            src={homeLogo}
+            src={ homeImg }
             alt="home pic"
-            className="img-fluid"
+            className="home-picture"
           />
         </Col>
       </Row>

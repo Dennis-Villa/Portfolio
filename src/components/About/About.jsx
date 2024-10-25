@@ -1,9 +1,8 @@
 
 import { Container, Row, Col } from "react-bootstrap";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import { aboutImg } from "../../Assets";
 
 import "./About.css"
 
@@ -18,8 +17,8 @@ function About() {
           <Col md={7} >
             <Aboutcard />
           </Col>
-          <Col md={5}>
-            <img src={laptopImg} alt="about" className="img-fluid about-img" />
+          <Col md={5} className="col-about-image">
+            <img src={aboutImg} alt="about" className="img-fluid about-img" />
           </Col>
         </Row>
         <h1 className="main-header">

@@ -12,7 +12,7 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
+        <Col md="4" className="footer-copywright footer-credits">
           <h3>Based on <a 
               href="https://github.com/soumyajit4419/Portfolio/tree/master"
               rel="noreferrer noopener"

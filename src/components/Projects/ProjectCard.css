@@ -1,6 +1,6 @@
 
 .project-card-view {
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+    box-shadow: 0 4px 5px 3px var(--box-shadow-project);
     color: var(--text-color);
     background-color: transparent;
     opacity: 0.9;
@@ -10,7 +10,7 @@
     &:hover {
         transform: scale(1.02);
         overflow: hidden;
-        box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+        box-shadow: 0 4px 4px 5px var(--box-shadow-project-hover);
     }
 }
 
@@ -51,5 +51,5 @@
 }
 
 .project-card-button {
-    margin: 0 8px;
+    margin: 0 8px 8px;
 }
