@@ -59,6 +59,10 @@
     .footer-copywright {
       text-align: center;
     }
+
+    .footer-credits {
+        display: none;
+    }
   
     .footer-body {
       text-align: center;
