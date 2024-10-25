@@ -38,7 +38,7 @@ function Experience() {
     return (
         <Container id="experience" className="experience">
             <h1 className="main-header experience-header">
-                Work Experience
+                Work <strong className="important-text">Experience</strong>
             </h1>
 
             <ExperienceCard 
