@@ -13,7 +13,12 @@
 }
 
 .navbar-logo {
-    height: 50px;
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-logo g {
+    fill: var(--logo-image-color);
 }
 
 .navbar-toggler {

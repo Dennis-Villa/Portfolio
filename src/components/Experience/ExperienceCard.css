@@ -12,13 +12,17 @@
 }
 
 .experience-card-logo {
-  background-color: var(--text-color-secondary);
+  background-color: var(--experience-image-background-color);
   width: 100px;
   height: 100px;
   -webkit-box-shadow: 4px 3px 20px -2px var(--box-shadow-experience);
   -moz-box-shadow: 4px 3px 20px -2px var(--box-shadow-experience);
   box-shadow: 4px 3px 20px -2px var(--box-shadow-experience);
   border-radius: 50px;
+}
+
+.experience-card-logo path {
+  fill: var(--experience-image-color);
 }
 
 .experience-card-stepper {
