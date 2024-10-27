@@ -5,6 +5,7 @@
   flex-direction: row;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  padding-top: 30px;
 }
 
 .experience-card-logo-div {
@@ -29,11 +30,17 @@
 
 .experience-card-stepper {
   display: flex;
-  flex-direction:row;
+  flex-direction: column;
   position: relative;
   align-items: center; 
   flex-direction: column; 
   margin-top: -40px
+  /* justify-content: ; */
+}
+
+.circle-stack {
+  align-items: center;
+  justify-content: center;
 }
 
 .experience-card-stepper-circle {
@@ -41,18 +48,34 @@
   height: 20px;
   border-radius: 50%;
   z-index: 100;
+  background-color: var(--experience-logo-color);
 }
 
 .experience-card-stepper-line {
+  width: 2px;
+  /* height: 320px; */
+  /* height: 50%; */
+  height: 100%;
+  /* position: absolute; */
+  /* margin-top: 20%; */
+  margin-top: 0%;
+  align-self: center;
+}
+
+.up-line {
   background-image: linear-gradient(
     to bottom,
-    #f1dea1,
-    #80bfcc
+    #fff,
+    var(--experience-logo-color)
   );
-  width: 2px;
-  height: 320px;
-  position: absolute;
-  margin-top: 20%;
+}
+
+.down-line {
+  background-image: linear-gradient(
+    to bottom,
+    var(--experience-logo-color),
+    #fff
+  );
 }
 
 .experience-card {
