@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Preloader from "./components/Preloader/Pre";
+// import Preloader from "./components/Preloader/Pre";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <Preloader load={load} />
+      {/* <Preloader load={load} /> */}
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
 
