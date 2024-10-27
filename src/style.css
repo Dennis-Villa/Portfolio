@@ -1,31 +1,46 @@
-html {
+:root {
+  color-scheme: dark;
+
+  --background-color-first: light-dark(#FDFFFC, #191228);
+  --background-color-second: light-dark(#F7FCFC, #0d0916);
   --background-gradient: linear-gradient(
-    #191228,
-    #0d0916
+    var(--background-color-first),
+    var(--background-color-second)
   );
 
+  --logo-image-color: light-dark(#000, #c770f0);
 
-  --background-color: #191327;
-  --box-color: #04151f;
-  --footer-background-color: #070310;
-  --preloader-background-color: #0c0513;
+  --experience-image-background-color: light-dark(#F1DEA1, #F1DEA1);
+  --experience-image-color: light-dark(#000, #000);
 
-  --button-color: #623686;
-  --button-color-hover: #6d20c5d7;
-  --icon-color-before: #68187a;
+  --box-color: light-dark(#FFD69D, #04151f);
+  --footer-background-color: light-dark(#2EC4B6, #070310);
+  --preloader-background-color: light-dark(#FDFFFC, #0c0513);
+  
+  --button-background-color: light-dark(#E71D36, #623686);
+  --button-background-color-hover: light-dark(#A81223, #6d20c5d7);
+  --button-color: light-dark(#FDFFFC, var(--text-color));
+  --button-color-hover: light-dark(#F7FCFC, var(--text-color));
 
-  --box-shadow-experience: #454444;
-  --box-shadow-stack: #5904a823;
-  --box-shadow-project: #77358875;
-  --box-shadow-project-hover: #8148908f;
-  --box-shadow-navbar-sticky: #09051d2c;
+  --navbar-theme-icon-color: light-dark(var(--text-color), var(--imp-text-color));
 
-  --border-color-stack: #c889e6a2;
-  --border-color-stack-hover: #c573e6e1;
+  --home-icon-background: light-dark(#2EC4B6, var(--text-color));
+  --home-icon-color: light-dark(#FDFFFC, var(--button-background-color));
+  --home-icon-color-before: light-dark(#FDFFFC, #68187a);
+  --home-icon-color-hover: light-dark(var(--button-background-color), var(--button-background-color));
 
-  --text-color: #faf3dd;
-  --text-color-secondary: #F1DEA1;
-  --imp-text-color: #c770f0;
+  --box-shadow-experience: light-dark(#8C5200, #454444);
+  --box-shadow-stack: light-dark(#C0F0EC, #5904a823);
+  --box-shadow-project: light-dark(#C0F0EC, #77358875);
+  --box-shadow-project-hover: light-dark(#A1E9E2, #8148908f);
+  --box-shadow-navbar-sticky: light-dark(#F7FCFC, #09051d2c);
+
+  --border-color-stack:  light-dark(#218B80, #c889e6a2);
+  --border-color-stack-hover: light-dark(#27A69A, #c573e6e1);
+
+  --text-color: light-dark(#001524, #faf3dd);
+  --text-color-secondary: light-dark(#280601, #F1DEA1);
+  --imp-text-color: light-dark(#E71D36, #c770f0);
 
   --header-font-size: 2.7em;
   --header-font-weight: 700;
@@ -143,14 +158,15 @@ button:focus {
 /* --------- */
 
 .btn-primary {
-  color: var(--text-color);
-  background-color: var(--button-color);
-  border-color: var(--button-color);
+  color: var(--button-color);
+  background-color: var(--button-background-color);
+  border-color: var(--button-background-color);
 }
 
 .btn-primary:hover {
-  background-color: var(--button-color-hover);
-  border-color: var(--button-color-hover);
+  color: var(--button-color-hover);
+  background-color: var(--button-background-color-hover);
+  border-color: var(--button-background-color-hover);
 }
 .btn:focus {
   outline: none;

@@ -1,8 +1,8 @@
 
 import uclvLogo from "../../Assets/Experience/uclv_logo.png";
-import dataannotationLogo from "../../Assets/Experience/dataannotation_logo.svg";
+import Dataannotation from "../../Assets/Experience/dataannotation.svg";
 
 export {
     uclvLogo,
-    dataannotationLogo,
+    Dataannotation,
 };

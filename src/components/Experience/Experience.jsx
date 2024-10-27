@@ -2,7 +2,7 @@
 import { Container } from "react-bootstrap";
 import ExperienceCard from "./ExperienceCard";
 import "./Experience.css";
-import { uclvLogo, dataannotationLogo } from "../../Assets/Experience";
+import { uclvLogo, Dataannotation } from "../../Assets/Experience";
 
 function Experience() {
 
@@ -11,7 +11,7 @@ function Experience() {
             title: "AI Model Trainer",
             company: "DataAnnotation Tech",
             company_url: "https://www.dataannotation.tech/",
-            logo_path: dataannotationLogo,
+            logo_path: Dataannotation,
             duration: "Feb 2024 - May 2024",
             location: "New York, US",
             description:

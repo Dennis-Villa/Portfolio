@@ -18,11 +18,18 @@ function ExperienceCard(props) {
         >
             {/* <Fade left duration={2000} distance="40px"> */}
                 <div className="experience-card-logo-div">
-                    <img
-                        className="experience-card-logo"
-                        src={experience.logo_path}
-                        alt="Company Logo"
-                    />
+                    {
+                        typeof experience.logo_path === 'string'
+                            ? <img
+                                className="experience-card-logo"
+                                src={experience.logo_path}
+                                alt="Company Logo"
+                            />
+                            : <experience.logo_path 
+                                className="experience-card-logo" 
+                                alt="Company Logo"
+                            />
+                    }
                 </div>
             {/* </Fade> */}
 

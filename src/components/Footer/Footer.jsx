@@ -34,7 +34,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillGithub />
+                <AiFillGithub className="footer-icon"/>
               </a>
             </li>
             <li className="social-icons">
@@ -44,7 +44,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn className="footer-icon"/>
               </a>
             </li>
             <li className="social-icons">
@@ -54,7 +54,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <MdOutlineEmail />
+                <MdOutlineEmail className="footer-icon"/>
               </a>
             </li>
           </ul>
