@@ -4,6 +4,8 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--background-gradient);
+  background-color: var(--background-color-first);
   color: var(--text-color);
+
+  transition: background-color 0.3s;
 }

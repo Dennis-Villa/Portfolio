@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .experience-card-logo-div {
@@ -113,8 +115,6 @@
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
 } 
 
 .experience-card-duration {

@@ -22,6 +22,8 @@
   --button-color: light-dark(#FDFFFC, var(--text-color));
   --button-color-hover: light-dark(#F7FCFC, var(--text-color));
 
+  --navbar-theme-icon-color: light-dark(var(--text-color), var(--imp-text-color));
+
   --home-icon-background: light-dark(#2EC4B6, var(--text-color));
   --home-icon-color: light-dark(#FDFFFC, var(--button-background-color));
   --home-icon-color-before: light-dark(#FDFFFC, #68187a);
@@ -31,7 +33,7 @@
   --box-shadow-stack: light-dark(#C0F0EC, #5904a823);
   --box-shadow-project: light-dark(#C0F0EC, #77358875);
   --box-shadow-project-hover: light-dark(#A1E9E2, #8148908f);
-  --box-shadow-navbar-sticky: light-dark(#1A6F66, #09051d2c);
+  --box-shadow-navbar-sticky: light-dark(#F7FCFC, #09051d2c);
 
   --border-color-stack:  light-dark(#218B80, #c889e6a2);
   --border-color-stack-hover: light-dark(#27A69A, #c573e6e1);

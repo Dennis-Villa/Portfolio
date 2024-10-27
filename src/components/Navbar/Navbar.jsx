@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -8,6 +8,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { IoBriefcaseOutline } from "react-icons/io5";
+import { FaRegMoon, FaRegSun } from "react-icons/fa";
 
 import "./Navbar.css";
 import Logo from "../../Assets/logo.svg";
@@ -16,6 +17,11 @@ import Logo from "../../Assets/logo.svg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [darkMode, updateDarkMode] = useState(true);
+
+  useEffect(() => {
+    setDarkTheme( localStorage.getItem('darkMode') == 'true' );
+  }, []);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -23,6 +29,12 @@ function NavBar() {
     } else {
       updateNavbar(false);
     }
+  }
+
+  function setDarkTheme( darkMode ) {
+    document.body.style.colorScheme = (darkMode ? 'dark' : 'light');
+    localStorage.setItem('darkMode', darkMode );
+    updateDarkMode( darkMode );
   }
 
   window.addEventListener("scroll", scrollHandler);
@@ -36,9 +48,15 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="navbar-logo" alt="brand" /> */}
           <Logo className="navbar-logo" alt="brand" />
         </Navbar.Brand>
+        <Nav.Item className="toggler-wraper">
+          {
+            darkMode
+              ? <FaRegMoon onClick={ () => setDarkTheme(false) }/>
+              : <FaRegSun onClick={ () => setDarkTheme(true) } />
+          }
+        </Nav.Item>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -49,6 +67,7 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+        
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -57,7 +76,7 @@ function NavBar() {
                 href="/#home"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "3px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -68,7 +87,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <IoBriefcaseOutline
-                  style={{ marginBottom: "2px" }}
+                  style={{ marginBottom: "3px" }}
                 />{" "}
                 Experience
               </Nav.Link>
@@ -81,7 +100,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
+                  style={{ marginBottom: "3px" }}
                 />{" "}
                 Projects
               </Nav.Link>
@@ -93,11 +112,12 @@ function NavBar() {
                 href="/#about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "3px" }} /> About
               </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
+        
       </Container>
     </Navbar>
   );
